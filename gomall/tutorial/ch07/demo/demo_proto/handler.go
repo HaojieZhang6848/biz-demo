@@ -30,3 +30,10 @@ func (s *EchoImpl) Echo(ctx context.Context, req *pbapi.Request) (resp *pbapi.Re
 
 	return resp, err
 }
+
+// Bye implements the EchoImpl interface.
+func (s *EchoImpl) Bye(ctx context.Context, req *pbapi.Request) (resp *pbapi.Response, err error) {
+	resp, err = service.NewByeService(ctx).Run(req)
+
+	return resp, err
+}

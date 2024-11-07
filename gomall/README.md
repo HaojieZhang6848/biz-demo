@@ -42,6 +42,10 @@ List required
 - [Air](https://github.com/cosmtrek/air)
 - ...
 
+#### Note
+
+- By default, the demo_proto project in ch02 to ch07 use kitex v0.8.0. If you want to use `cwgo` to regenerate the project, you need update kitex to v0.9.1, and use cgo v0.1.2 by `go get github.com/cloudwego/cwgo@v0.1.2`.
+
 ### Clone code
 ```
 git clone ...
